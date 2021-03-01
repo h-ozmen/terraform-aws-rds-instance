@@ -1,5 +1,7 @@
-# Build RDS Instance
-### Please copy paste below code
+# Terraform0.14
+Build RDS Instance
+
+Please copy paste below code
 ```
 module "db" {
     source = "../"
@@ -38,6 +40,5 @@ output DB_NAME {
 output endpoint {
 	value = module.db.endpoint
 }
-
 ```
-### NOTE:  Password will be created in SSM
+NOTE: Password will be created in SSM
